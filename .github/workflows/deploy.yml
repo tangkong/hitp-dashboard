@@ -3,8 +3,8 @@ on:
   push:
     branches:
       - master
-  schedule:
-    - cron: '0 5 * * *'  # run at during the 5th hour of each day
+  # schedule:
+  #   - cron: '0 5 * * *'  # run at during the 5th hour of each day
 jobs:
   build-and-deploy:
     runs-on: ubuntu-18.04
@@ -38,3 +38,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           deploy_key: ${{ secrets.DEPLOY_KEY }}
+          external_repository:  hitp-dashboard/hitp-dash.github.io
+          publish_branch: master
+          publish_dir: ./127.0.0.1:8050
