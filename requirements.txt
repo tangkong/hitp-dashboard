@@ -3,5 +3,3 @@ pandas
 dash==1.9.1
 matplotlib
 sklearn
-nbconvert
-ipykernel
