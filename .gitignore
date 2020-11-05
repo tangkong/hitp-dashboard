@@ -1,0 +1,11 @@
+__pycache__/
+.vscode/
+*.pyc
+*.egg-info/
+*.egg
+
+.logs/
+.metadata/
+.github/ 
+
+docs/source/_build/
